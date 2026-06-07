@@ -2,144 +2,491 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy Policy — RAAV</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: #FAFAFA;
-    color: #1A1A1A;
-    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-  }
-  .page-wrap { max-width: 720px; margin: 0 auto; padding: 4rem 2rem 6rem; }
-  .brand { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #7C3AED; margin-bottom: 2.5rem; display: block; }
-  h1 { font-size: 28px; font-weight: 700; color: #111; letter-spacing: -.02em; margin-bottom: 6px; line-height: 1.2; }
-  .meta { font-size: 13px; color: #888; margin-bottom: 2.8rem; padding-bottom: 2rem; border-bottom: 1px solid #E5E5E5; }
-  .intro-box { background: #F3F0FF; border-left: 3px solid #7C3AED; border-radius: 0 8px 8px 0; padding: 1.1rem 1.4rem; margin-bottom: 2.8rem; font-size: 14px; color: #4C1D95; line-height: 1.65; }
-  h2 { font-size: 17px; font-weight: 700; color: #111; margin-top: 2.6rem; margin-bottom: 0.9rem; letter-spacing: -.01em; display: flex; align-items: center; gap: 10px; }
-  h2::before { content: ''; display: block; width: 4px; height: 18px; background: #7C3AED; border-radius: 2px; flex-shrink: 0; }
-  p { color: #333; margin-bottom: 1rem; font-size: 15px; }
-  ul, ol { padding-left: 1.4rem; margin-bottom: 1rem; color: #333; font-size: 15px; }
-  li { margin-bottom: 0.5rem; line-height: 1.65; }
-  li strong { color: #111; }
-  a { color: #7C3AED; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .contact-box { background: #F8F8F8; border: 1px solid #E5E5E5; border-radius: 10px; padding: 1.4rem 1.5rem; margin-top: 2.8rem; }
-  .contact-box h3 { font-size: 15px; font-weight: 700; color: #111; margin-bottom: 8px; }
-  .contact-box p { font-size: 14px; color: #555; margin: 0; }
-  .other-docs { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid #E5E5E5; font-size: 13px; color: #888; }
-  .other-docs a { font-weight: 500; }
-  .footer-note { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #E5E5E5; font-size: 12px; color: #AAA; line-height: 1.6; }
-  @media (max-width: 600px) { .page-wrap { padding: 2.5rem 1.2rem 4rem; } h1 { font-size: 23px; } }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #f7f7f8;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 28px 96px;
+  background: #ffffff;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  color: #000;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 56px 0 16px;
+  padding-top: 24px;
+  border-top: 1px solid #eaeaea;
+  color: #000;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+  color: #1a1a1a;
+}
+p { margin: 0 0 16px; }
+ul, ol { margin: 0 0 16px; padding-left: 24px; }
+li { margin: 0 0 8px; }
+strong { color: #000; font-weight: 600; }
+a { color: #0066cc; text-decoration: underline; text-decoration-color: rgba(0,102,204,0.3); }
+a:hover { text-decoration-color: rgba(0,102,204,1); }
+.effective-date { color: #666; font-size: 14px; margin: 0 0 32px; font-weight: 500; }
+.quick-summary {
+  background: #f5f5f7;
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin: 32px 0 40px;
+}
+.quick-summary h2 {
+  font-size: 18px;
+  margin: 0 0 16px;
+  padding-top: 0;
+  border-top: none;
+}
+.quick-summary ul { margin-bottom: 0; }
+.intro-note {
+  color: #444;
+  font-size: 15px;
+  font-style: italic;
+  margin: 24px 0 32px;
+}
+.contact-block {
+  background: #fafafa;
+  border-left: 3px solid #1a1a1a;
+  padding: 16px 20px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+.footer-link {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #eaeaea;
+  font-size: 14px;
+  color: #666;
+}
+@media (max-width: 640px) {
+  main { padding: 32px 20px 72px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 19px; margin: 40px 0 12px; }
+  h3 { font-size: 16px; }
+  body { font-size: 15px; }
+  .quick-summary { padding: 20px 22px; border-radius: 12px; }
+}
 </style>
 </head>
 <body>
-<div class="page-wrap">
+<main>
 
-  <span class="brand">RAAV</span>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: April 2026 &nbsp;·&nbsp; Effective date: April 2026</p>
+<h1>Privacy Policy</h1>
+<p class="effective-date">Effective date: [TBD — set when published]</p>
 
-  <div class="intro-box">
-    Your privacy matters to us. This policy explains in plain language what information RAAV collects, how it is used, and the choices you have. We do not sell your data. We do not show you ads. We collect only what is needed to make the app work.
-  </div>
+<p>This Privacy Policy describes how RAAV handles your personal information.
+We've written it in plain language. Where legal terms are unavoidable,
+we explain what they mean.</p>
 
-  <h2>1. Who we are</h2>
-  <p>RAAV is a fitness tracking application developed and operated by Yonatan Slivko ("we", "us", or "our"), based in Israel. If you have any questions about this policy, you can contact us at <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>.</p>
-
-  <h2>2. Information we collect</h2>
-  <p>We collect information you provide directly when you create an account and use the app. This includes:</p>
-  <ul>
-    <li><strong>Account information:</strong> Email address, display name, profile photo (optional), and phone number (optional).</li>
-    <li><strong>Body metrics:</strong> Height, current weight, biological sex, date of birth, estimated body fat percentage, lean body mass, and activity level — entered voluntarily by you to personalise your experience.</li>
-    <li><strong>Health and fitness data:</strong> Workout logs, exercise records, set and repetition data, personal records, body weight history, and training program data you create or are assigned.</li>
-    <li><strong>Goal and program data:</strong> Diet phase, calorie targets, program start and end dates, and training preferences you set.</li>
-    <li><strong>Session data:</strong> Workout session timestamps and durations, exercise video uploads you submit (stored in Firebase Storage).</li>
-  </ul>
-  <p>We do <strong>not</strong> collect data from your device's health platform (Apple Health, Google Fit) unless you explicitly connect them in a future update. We do not collect location data, contacts, microphone input, or camera input beyond profile photo upload.</p>
-
-  <h2>3. How we use your information</h2>
-  <p>We use the information we collect solely to provide, maintain and improve the RAAV application. Specifically:</p>
-  <ul>
-    <li>To create and manage your account and authenticate you securely.</li>
-    <li>To store and display your workout history, personal records and progress over time.</li>
-    <li>To calculate and display fitness metrics such as estimated 5-rep maximums, training volume and progress percentages.</li>
-    <li>To enable program sharing between users where you explicitly choose to send or receive a program.</li>
-    <li>To respond to support requests you send to our contact email.</li>
-  </ul>
-  <p>We do <strong>not</strong> use your data for advertising, marketing profiling, or sale to third parties. We do not use your data to train machine learning models.</p>
-
-  <h2>4. Local storage and device data</h2>
-  <p>The RAAV app stores certain data locally on your device to improve performance and enable offline functionality. This includes:</p>
-  <ul>
-    <li><strong>Authentication tokens:</strong> A secure token is stored locally on your device by Firebase Authentication to keep you signed in between sessions. This token does not contain your password and is invalidated when you sign out.</li>
-    <li><strong>App preferences:</strong> Settings such as your selected unit of measurement (kg/cm or lbs/in) and display preferences are stored locally on your device.</li>
-    <li><strong>Cached data:</strong> Recent workout and exercise data may be temporarily cached locally to improve app load speed.</li>
-  </ul>
-  <p>This locally stored data remains on your device and is cleared when you uninstall the app or sign out. We do not use cookies in the traditional web sense, as RAAV is a native mobile application.</p>
-
-  <h2>5. How your information is stored and protected</h2>
-  <p>Your data is stored using Google Firebase (Firestore database and Firebase Storage), a cloud infrastructure service operated by Google LLC. Firebase is hosted in Google's secure data centres and is compliant with ISO 27001, SOC 1, SOC 2 and SOC 3 security standards.</p>
-  <p>Access to your data is controlled by Firebase security rules. Only you can read and write your own data, with the limited exception that training programs you choose to send to other users make your program name and workout structure visible to the recipient.</p>
-  <p>Authentication is handled by Firebase Authentication using industry-standard encryption. We never store passwords in plaintext.</p>
-  <p>While we implement strong technical safeguards, no method of transmission over the internet or electronic storage is 100% secure. We encourage you to use a strong, unique password for your account.</p>
-
-  <h2>6. Data breach notification</h2>
-  <p>In the event of a personal data breach that is likely to result in a risk to your rights and freedoms, we will notify you and relevant supervisory authorities as required by applicable law. Specifically:</p>
-  <ul>
-    <li>We will notify affected users by email within 72 hours of becoming aware of a qualifying breach, where notification is technically feasible.</li>
-    <li>The notification will describe the nature of the breach, the categories of data affected, the likely consequences, and the steps we are taking to address it.</li>
-    <li>We maintain an internal log of all data security incidents, whether or not they qualify as notifiable breaches, as part of our ongoing security practices.</li>
-  </ul>
-  <p>If you believe your account has been compromised, please contact us immediately at <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>.</p>
-
-  <h2>7. Sharing of your information</h2>
-  <p>We do not sell, rent or trade your personal information to third parties.</p>
-  <p>The only third-party service that processes your data is <strong>Google Firebase</strong>, which acts as our infrastructure provider under their terms of service and privacy policies. You can review Google's privacy policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
-  <p>We may disclose your information if required to do so by law or to protect the rights and safety of our users.</p>
-
-  <h2>8. Data retention</h2>
-  <p>We retain your personal data and fitness records for as long as your account is active. If you delete your account, we will delete your personal information and fitness data from our active databases within 30 days. Residual copies in backup systems are purged within 90 days.</p>
-  <p>Exercise videos you upload are deleted when you delete the associated exercise or delete your account.</p>
-
-  <h2>9. Your rights</h2>
-  <p>Depending on where you live, you may have the following rights regarding your personal data:</p>
-  <ul>
-    <li><strong>Access:</strong> You can view all personal data and fitness records stored in your account directly within the app at any time.</li>
-    <li><strong>Correction:</strong> You can edit your personal information, body metrics and goals within the app's settings at any time.</li>
-    <li><strong>Deletion:</strong> You can delete your account and all associated data from within the app settings, or by contacting us at <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>.</li>
-    <li><strong>Data portability:</strong> You may request an export of your data by contacting us. We will provide it in a readable format within 30 days.</li>
-    <li><strong>Objection:</strong> You may object to any processing of your data at any time by deleting your account or contacting us.</li>
-  </ul>
-  <p>If you are located in the European Economic Area, United Kingdom, or Israel, you have rights under the GDPR or applicable local data protection law. To exercise any of these rights, contact us at <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>.</p>
-
-  <h2>10. Children's privacy</h2>
-  <p>RAAV is not intended for children under the age of 13. We do not knowingly collect personal information from anyone under 13. If you are a parent or guardian and believe your child under 13 has provided us with personal information, please contact us at <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a> and we will delete that information promptly.</p>
-  <p>Users between the ages of 13 and 17 should use the app with parental consent.</p>
-
-  <h2>11. Changes to this Privacy Policy</h2>
-  <p>We may update this Privacy Policy from time to time to reflect changes in the app or applicable law. When we do, we will update the "Last updated" date at the top of this page. For significant changes, we will notify you within the app.</p>
-  <p>Your continued use of RAAV after any changes to this policy constitutes your acceptance of the updated terms.</p>
-
-  <h2>12. Governing law</h2>
-  <p>This Privacy Policy is governed by the laws of the State of Israel. Any disputes relating to this policy shall be subject to the exclusive jurisdiction of the courts of Israel.</p>
-
-  <div class="contact-box">
-    <h3>Questions or requests?</h3>
-    <p>
-      <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a><br>
-      RAAV &nbsp;·&nbsp; Operated by Yonatan Slivko &nbsp;·&nbsp; Israel
-    </p>
-    <p class="other-docs">Also see: <a href="terms.html">Terms of Use</a></p>
-  </div>
-
-  <p class="footer-note">
-    This Privacy Policy applies to the RAAV mobile application available on iOS and Android.<br>
-    &copy; 2026 Yonatan Slivko. All rights reserved.
-  </p>
-
+<div class="quick-summary">
+<h2>Quick summary</h2>
+<p>If you only read one section, read this one:</p>
+<ul>
+<li>We collect what we need to run a workout and nutrition tracking app: your account info, your logged workouts, your logged foods, your body weight history, and your relationships with coaches or athletes.</li>
+<li>All your data is stored and processed in the European Union.</li>
+<li>We use a small set of third-party services that you can review in Section 4. We do not sell your data to anyone, ever.</li>
+<li>You can delete your account at any time from inside the App. When you do, we delete everything we reasonably can, and we're transparent about what stays (see Section 7).</li>
+<li>For any privacy question: <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a></li>
+</ul>
+<p>The rest of this policy goes into the details.</p>
 </div>
+
+<h2>1. Who this policy applies to</h2>
+
+<p>This policy applies to everyone who uses the RAAV mobile application
+("the App"), whether you signed up as an individual user, as an athlete
+connected to a coach, or as a coach managing athletes.</p>
+
+<p>This policy does NOT cover:</p>
+<ul>
+<li>Third-party services we integrate with. Each has its own privacy policy, listed and linked in Section 4.</li>
+<li>Other apps you use alongside RAAV (such as Apple Health, which is governed by Apple's privacy policy).</li>
+<li>Information you share publicly outside the App.</li>
+</ul>
+
+<h3>Who we are</h3>
+<p>"RAAV", "we", "our", and "us" in this document refer to the developers
+and operators of the RAAV mobile application. You can reach us at:</p>
+<div class="contact-block">
+<a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>
+</div>
+<p>We respond to privacy questions and data requests within 30 days, and
+usually much sooner. There's a real person on the other end.</p>
+
+<h2>2. Information we collect</h2>
+
+<h3>When you create an account</h3>
+<ul>
+<li><strong>Email address</strong> — used for account access and important account notifications</li>
+<li><strong>Display name</strong> — visible to coaches and athletes you are connected with</li>
+<li><strong>Password</strong> — handled and encrypted by Firebase Authentication; we never see or store your password in plain text</li>
+<li><strong>Sign-in method</strong> — whether you used email/password, Google Sign-In, or Sign in with Apple</li>
+<li><strong>Account creation date</strong></li>
+</ul>
+
+<h3>When you set up your profile</h3>
+<ul>
+<li>Sex (used to calculate personalized calorie and macro recommendations)</li>
+<li>Birthdate (used to verify you are 16 or older and to calculate age-based recommendations)</li>
+<li>Height</li>
+<li>Initial weight</li>
+<li>Goal (lose, maintain, or gain weight)</li>
+<li>Units preference (kilograms or pounds, centimeters or inches)</li>
+<li>Activity level</li>
+</ul>
+
+<h3>When you use the App</h3>
+<ul>
+<li><strong>Workouts you log</strong> — exercises performed, sets, reps, weight, duration, notes</li>
+<li><strong>Body weight history</strong> — weights you log over time</li>
+<li><strong>Nutrition logs</strong> — foods consumed, portions, macros, timestamps</li>
+<li><strong>Custom foods</strong> you save to your personal library</li>
+<li><strong>Saved meals</strong> you create</li>
+<li><strong>Programs</strong> you create as a coach, or receive as an athlete</li>
+<li><strong>Coach-athlete connections</strong> you establish</li>
+<li><strong>Progress through onboarding</strong> (which steps you've completed)</li>
+</ul>
+
+<h3>Automatic data</h3>
+<ul>
+<li><strong>Device info</strong> — iOS version, app version, device model — sent in crash reports only</li>
+<li><strong>Anonymous usage data</strong> — which screens you visit, common errors encountered — used to understand how the App is being used in aggregate</li>
+<li><strong>Crash reports</strong> — what the App was doing when it crashed, scrubbed of personal data where possible</li>
+<li><strong>App session data</strong> — when you opened the App, how long you used it</li>
+</ul>
+
+<h3>Subscription data</h3>
+<p>We do NOT see your payment information. Apple handles all payments
+through the App Store. We receive:</p>
+<ul>
+<li>Confirmation that you have an active subscription</li>
+<li>Which tier you are on (free or Pro)</li>
+<li>When your subscription renews or expires</li>
+</ul>
+<p>We never receive your credit card number, Apple ID, billing address, or
+purchase history outside of RAAV. This information is handled entirely
+by Apple and RevenueCat (our subscription manager — see Section 4).</p>
+
+<h3>HealthKit data</h3>
+<p>When the HealthKit integration is enabled, the App reads your daily
+step count from Apple HealthKit on your device.</p>
+<ul>
+<li>We <strong>read only</strong> — we never write data to HealthKit</li>
+<li>Step counts are used for in-App display only (your step ring, your step history chart)</li>
+<li>Step counts are <strong>not stored on our servers</strong> and <strong>not shared with any third party</strong></li>
+<li>You can revoke HealthKit access at any time via iOS Settings → Privacy &amp; Security → Health</li>
+</ul>
+
+<h3>What we do NOT collect</h3>
+<ul>
+<li>Your phone's contacts, photos (outside of profile/exercise media you explicitly upload), calendar, microphone, or location data</li>
+<li>Your activity outside the RAAV App</li>
+<li>Sensitive identifiers like government IDs, social security numbers, or financial account numbers</li>
+<li>Information about other people from your contacts or social networks</li>
+</ul>
+
+<h2>3. How we use your information</h2>
+
+<h3>To provide the App and its features</h3>
+<ul>
+<li>Your account information lets you sign in and identifies you across sessions</li>
+<li>Your profile data is used to display your information to you, to your coach (if you have one), and to calculate personalized recommendations</li>
+<li>Your workout, nutrition, and body composition data is used to display your history, charts, statistics, and to help your coach (if you have one) support you</li>
+<li>Coach-athlete connection data enables the coaching features</li>
+</ul>
+<p class="intro-note">Legal basis (for EU users): performance of the contract you enter into by using the App.</p>
+
+<h3>To improve the App</h3>
+<ul>
+<li>Crash reports help us find and fix bugs</li>
+<li>Aggregate usage data tells us which features are being used and where the App is breaking</li>
+</ul>
+<p class="intro-note">Legal basis: our legitimate interest in providing a working app.</p>
+
+<h3>To manage your subscription</h3>
+<ul>
+<li>Subscription state lets the App know whether you have access to Pro features</li>
+</ul>
+<p class="intro-note">Legal basis: performance of the contract.</p>
+
+<h3>To communicate with you</h3>
+<ul>
+<li>We send transactional emails (account confirmation, important changes, responses to your support questions)</li>
+<li>We do <strong>NOT</strong> currently send marketing emails. If we ever start, you would have to opt in first, and you could opt out at any time</li>
+</ul>
+<p class="intro-note">Legal basis: performance of the contract for transactional emails; consent for any future marketing.</p>
+
+<h3>What we do NOT do with your data</h3>
+<ul>
+<li>We do <strong>NOT</strong> sell your data to anyone, ever</li>
+<li>We do <strong>NOT</strong> share your data with advertisers</li>
+<li>We do <strong>NOT</strong> use your workouts, foods, or body data to train AI or machine learning models</li>
+<li>We do <strong>NOT</strong> profile you for advertising purposes</li>
+<li>We do <strong>NOT</strong> share data with data brokers</li>
+<li>We do <strong>NOT</strong> monetize your information in any way other than the subscription you may purchase</li>
+</ul>
+
+<h2>4. Third-party services we use</h2>
+
+<p>We use the following third-party services to operate the App. Each is a
+"data processor" — they handle some of your data on our behalf, under a
+contract that requires them to protect it.</p>
+
+<h3>Firebase (Google LLC)</h3>
+<p>What it does: hosts our database, authentication, file storage, and serverless functions.</p>
+<p>What data they receive: essentially all your account and App data.</p>
+<p>Where: data is stored in the European Union (europe-west1, Belgium).</p>
+<p>Privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+<h3>Sentry (Functional Software, Inc.)</h3>
+<p>What it does: collects crash reports and errors from the App so we can fix them.</p>
+<p>What data they receive: technical info about crashes (device model, iOS version, app version, the code path that crashed). We attempt to scrub personal data from these reports.</p>
+<p>Where: United States.</p>
+<p>Privacy policy: <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">sentry.io/privacy</a></p>
+
+<h3>RevenueCat (RevenueCat, Inc.)</h3>
+<p>What it does: manages our subscription business (knowing who has a Pro subscription, when subscriptions renew, etc.).</p>
+<p>What data they receive: an anonymized identifier for your account, your subscription status, and subscription events. They do NOT receive your name, email, or any health/fitness data.</p>
+<p>Where: United States.</p>
+<p>Privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
+
+<h3>Apple StoreKit (Apple Inc.)</h3>
+<p>What it does: processes all in-app purchases. We never see your payment details.</p>
+<p>What data they receive: everything Apple normally handles for App Store purchases, governed by Apple's own privacy policy.</p>
+<p>Where: Global (Apple's infrastructure).</p>
+<p>Privacy policy: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></p>
+
+<h3>Open Food Facts</h3>
+<p>What it does: provides the public food database we use when you search for foods to log.</p>
+<p>What data they receive: your search queries (e.g., "chicken breast"). They do NOT receive your account identifier — the queries are anonymous from their perspective.</p>
+<p>Where: Global (open-source nonprofit).</p>
+<p>Privacy policy: <a href="https://world.openfoodfacts.org/legal" target="_blank" rel="noopener">world.openfoodfacts.org/legal</a></p>
+
+<h3>Google Sign-In and Sign in with Apple</h3>
+<p>What they do: provide an alternative to creating a password — you can sign in using your existing Google or Apple account.</p>
+<p>What data they receive: notification that a sign-in event has occurred for your Google or Apple account, governed by Google's and Apple's respective privacy policies. They do NOT receive your RAAV data.</p>
+<p>Where: Global.</p>
+<p>Privacy policies:</p>
+<ul>
+<li>Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+<li>Apple: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
+</ul>
+
+<h3>Services we do NOT currently use</h3>
+<p>For transparency, we want to note services that exist in our code but are NOT currently active:</p>
+<ul>
+<li><strong>Nutritionix</strong> — code exists for future barcode and food search integration, but no credentials are configured and no data is sent. If we activate this in the future, we will update this policy.</li>
+</ul>
+
+<h2>5. Where your data lives</h2>
+
+<p>All of your account and App data is stored in the European Union, in
+Google Cloud data centers (europe-west1, Belgium).</p>
+
+<p>Backend processing (database operations, account deletion, video
+upload preparation) also happens in the European Union.</p>
+
+<p>Some of the third-party services we use are based outside the EU. The
+details are in the table above. In each case:</p>
+<ul>
+<li>These services receive only the minimum data they need to perform their function</li>
+<li>They are bound by data protection agreements (where required by law)</li>
+<li>They do not store your full account information</li>
+</ul>
+
+<h3>Users outside the EU</h3>
+<p>If you use RAAV from a country outside the European Union, your data
+is transferred to and stored in the EU. By using the App, you consent
+to this transfer.</p>
+
+<h2>6. Your rights</h2>
+
+<p>You have the following rights regarding your personal data. These
+rights are guaranteed under EU law (GDPR), California law (CCPA/CPRA),
+and similar laws in many other jurisdictions.</p>
+
+<h3>Access</h3>
+<p>You can see all the data we have about you, because it is visible in
+the App itself: your profile, your workout history, your food logs,
+your body weight history, your coach connections.</p>
+<p>If you need a machine-readable export of your data, email us at
+<a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a> and we will provide one within 30 days.</p>
+
+<h3>Correction</h3>
+<p>You can edit most of your data directly in the App — your profile,
+your logged workouts, your logged foods, etc. If you need help
+correcting something you cannot reach, email us.</p>
+
+<h3>Deletion</h3>
+<p>You can delete your account from within the App: Settings → Account → Delete Account.</p>
+<p>Section 7 explains exactly what is deleted and what (a small amount) remains.</p>
+
+<h3>Portability</h3>
+<p>You can request a copy of your data in a structured, commonly-used
+format. Email <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a> and we will provide it within 30 days.</p>
+
+<h3>Objection and restriction</h3>
+<p>You can object to or restrict our use of your data for purposes based
+on legitimate interest (primarily crash reporting and anonymous usage
+analytics). Email us and we will limit processing accordingly.</p>
+
+<h3>Withdraw consent</h3>
+<p>Where we rely on your consent (for example, HealthKit access if you
+enabled it), you can withdraw consent at any time. For HealthKit,
+revoke access via iOS Settings → Privacy &amp; Security → Health. For
+other consents, email us.</p>
+
+<h3>Complain</h3>
+<p>If you are not satisfied with how we handle a privacy request, you
+have the right to file a complaint with your local data protection
+authority.</p>
+<p>For EU residents, you can find your country's supervisory authority
+here: <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">edpb.europa.eu</a></p>
+<p>For California residents, you can file with the California Privacy
+Protection Agency: <a href="https://cppa.ca.gov" target="_blank" rel="noopener">cppa.ca.gov</a></p>
+
+<h3>How to exercise these rights</h3>
+<ul>
+<li>For most things, use the App's built-in features</li>
+<li>For anything else, email <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a></li>
+<li>We respond within 30 days</li>
+<li>We do not charge for these requests and we do not discriminate against you for exercising your rights</li>
+</ul>
+
+<h3>For California residents specifically</h3>
+<p>We do not "sell" your personal information as defined under California
+law, and we do not "share" it for cross-context behavioral advertising.
+We do not knowingly process the personal information of consumers
+under 16 years of age.</p>
+
+<h2>7. How long we keep your data, and what happens when you delete your account</h2>
+
+<h3>While your account is active</h3>
+<p>We keep your data for as long as your account exists. We do not have
+an automatic inactivity-based deletion policy. If you stop using RAAV,
+your account stays unless you delete it.</p>
+
+<h3>When you delete your account</h3>
+<p>When you delete your account, we automatically delete:</p>
+<ul>
+<li>Your user account document and profile</li>
+<li>Your workout history and exercise statistics</li>
+<li>Your body weight logs</li>
+<li>Your nutrition logs (food entries)</li>
+<li>Your custom food library</li>
+<li>Your saved meals</li>
+<li>Your notifications</li>
+<li>Workouts and exercises you created</li>
+<li>Programs you created</li>
+<li>Profile photo and any media you uploaded</li>
+<li>Your public profile snapshot</li>
+</ul>
+<p>The deletion process usually completes within minutes of you initiating it.</p>
+
+<h3>What may remain after deletion</h3>
+<p>A small amount of data is intentionally retained, in an anonymized
+form, because deleting it would break the experience for other users.
+We are transparent about this:</p>
+<ul>
+<li><strong>Community food database contributions.</strong> If you contributed a food to the public community food database (so other users could log it), the food entry stays. Your identity as the contributor is removed.</li>
+<li><strong>Programs you sent to other users.</strong> If you were a coach and sent a workout program to an athlete, that program stays in the athlete's account — they may still need it to train. Your identity as the sender is anonymized.</li>
+<li><strong>Notifications you sent to other users.</strong> These stay in the recipient's account, with sender identity removed.</li>
+<li><strong>Aggregated anonymous analytics and crash data.</strong> Sentry and Firebase Analytics may retain aggregated, anonymized data for up to 13 months. This data cannot be linked back to you.</li>
+</ul>
+
+<h3>If you want even the anonymized data removed</h3>
+<p>If you want your community food contributions or sent programs
+removed entirely (not just anonymized), email
+<a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a> and we will remove the underlying entries.</p>
+
+<h2>8. Security</h2>
+
+<p>We take security seriously, though we cannot guarantee 100% security
+for any online service. Here is what we do:</p>
+<ul>
+<li><strong>Data in transit:</strong> all communication between the App and our servers is encrypted via HTTPS (TLS 1.2 or higher)</li>
+<li><strong>Data at rest:</strong> all data stored in Firebase is encrypted using industry-standard methods</li>
+<li><strong>Authentication:</strong> handled by Firebase Authentication, which uses secure password hashing. We never see or store your password in plain text</li>
+<li><strong>Access controls:</strong> Firestore security rules enforce that users can only access their own data, and coaches can only access their athletes' data through verified relationships</li>
+<li><strong>Storage permissions:</strong> files uploaded to RAAV (such as profile photos) are protected by authentication requirements</li>
+<li><strong>Payment information:</strong> never touches our servers — handled entirely by Apple</li>
+</ul>
+<p>If you believe you've found a security issue, please email
+<a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>. We treat security reports with priority.</p>
+
+<h2>9. Children</h2>
+
+<p>RAAV is intended for users aged 16 and older.</p>
+
+<p>When you create an account, we ask for your birthdate. If you indicate
+that you are under 16, the App prevents you from registering. This is
+a good-faith barrier — we do not have technical means to detect or
+verify the age of users beyond this signup check.</p>
+
+<p>By using RAAV, you confirm that you are at least 16 years old. Any
+user who creates an account by providing false information about their
+age is in violation of these Terms, and is responsible for their own
+use of the App.</p>
+
+<h2>10. Changes to this policy</h2>
+
+<p>We may update this Privacy Policy from time to time. When we do:</p>
+<ul>
+<li>We update the "Effective date" at the top</li>
+<li>For significant changes, we will notify you within the App before the changes take effect</li>
+<li>We will never retroactively reduce your rights without telling you</li>
+</ul>
+<p>Your continued use of the App after a change takes effect indicates
+your acceptance of the updated policy. If you do not agree with a
+change, you can delete your account at any time.</p>
+
+<h2>11. Contact</h2>
+
+<p>For all privacy-related questions, data requests, or concerns:</p>
+<div class="contact-block">
+<a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>
+</div>
+<p>We respond within 30 days, usually much sooner.</p>
+<p>If you are filing a formal data request (access, deletion, correction,
+portability, etc.), please include:</p>
+<ul>
+<li>The email address associated with your account</li>
+<li>The specific request</li>
+<li>Any relevant context</li>
+</ul>
+<p>We will respond with what we need from you to complete the request.</p>
+
+<p class="footer-link">
+  <a href="./index.html">← Back to RAAV legal pages</a>
+</p>
+
+</main>
 </body>
 </html>

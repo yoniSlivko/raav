@@ -2,175 +2,495 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Use — RAAV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Terms of Service — RAAV</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: #FAFAFA;
-    color: #1A1A1A;
-    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-  }
-  .page-wrap { max-width: 720px; margin: 0 auto; padding: 4rem 2rem 6rem; }
-  .brand { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #7C3AED; margin-bottom: 2.5rem; display: block; }
-  h1 { font-size: 28px; font-weight: 700; color: #111; letter-spacing: -.02em; margin-bottom: 6px; line-height: 1.2; }
-  .meta { font-size: 13px; color: #888; margin-bottom: 2.8rem; padding-bottom: 2rem; border-bottom: 1px solid #E5E5E5; }
-  .intro-box { background: #F3F0FF; border-left: 3px solid #7C3AED; border-radius: 0 8px 8px 0; padding: 1.1rem 1.4rem; margin-bottom: 2.8rem; font-size: 14px; color: #4C1D95; line-height: 1.65; }
-  h2 { font-size: 17px; font-weight: 700; color: #111; margin-top: 2.6rem; margin-bottom: 0.9rem; letter-spacing: -.01em; display: flex; align-items: center; gap: 10px; }
-  h2::before { content: ''; display: block; width: 4px; height: 18px; background: #7C3AED; border-radius: 2px; flex-shrink: 0; }
-  p { color: #333; margin-bottom: 1rem; font-size: 15px; }
-  ul, ol { padding-left: 1.4rem; margin-bottom: 1rem; color: #333; font-size: 15px; }
-  li { margin-bottom: 0.5rem; line-height: 1.65; }
-  li strong { color: #111; }
-  a { color: #7C3AED; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .warning-box { background: #FFF8F0; border-left: 3px solid #D97706; border-radius: 0 8px 8px 0; padding: 1.1rem 1.4rem; margin: 1.4rem 0; font-size: 14px; color: #78350F; line-height: 1.65; }
-  .warning-box strong { color: #92400E; }
-  .contact-box { background: #F8F8F8; border: 1px solid #E5E5E5; border-radius: 10px; padding: 1.4rem 1.5rem; margin-top: 2.8rem; }
-  .contact-box h3 { font-size: 15px; font-weight: 700; color: #111; margin-bottom: 8px; }
-  .contact-box p { font-size: 14px; color: #555; margin: 0; }
-  .other-docs { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid #E5E5E5; font-size: 13px; color: #888; }
-  .other-docs a { font-weight: 500; }
-  .footer-note { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #E5E5E5; font-size: 12px; color: #AAA; line-height: 1.6; }
-  @media (max-width: 600px) { .page-wrap { padding: 2.5rem 1.2rem 4rem; } h1 { font-size: 23px; } }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #f7f7f8;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 28px 96px;
+  background: #ffffff;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  color: #000;
+}
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 56px 0 16px;
+  padding-top: 24px;
+  border-top: 1px solid #eaeaea;
+  color: #000;
+  letter-spacing: -0.01em;
+}
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+  color: #1a1a1a;
+}
+p { margin: 0 0 16px; }
+ul, ol { margin: 0 0 16px; padding-left: 24px; }
+li { margin: 0 0 8px; }
+strong { color: #000; font-weight: 600; }
+a { color: #0066cc; text-decoration: underline; text-decoration-color: rgba(0,102,204,0.3); }
+a:hover { text-decoration-color: rgba(0,102,204,1); }
+.effective-date { color: #666; font-size: 14px; margin: 0 0 32px; font-weight: 500; }
+.quick-summary {
+  background: #f5f5f7;
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin: 32px 0 40px;
+}
+.quick-summary h2 {
+  font-size: 18px;
+  margin: 0 0 16px;
+  padding-top: 0;
+  border-top: none;
+}
+.quick-summary ul { margin-bottom: 0; }
+.intro-note {
+  color: #444;
+  font-size: 15px;
+  font-style: italic;
+  margin: 24px 0 32px;
+}
+.contact-block {
+  background: #fafafa;
+  border-left: 3px solid #1a1a1a;
+  padding: 16px 20px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+.footer-link {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #eaeaea;
+  font-size: 14px;
+  color: #666;
+}
+@media (max-width: 640px) {
+  main { padding: 32px 20px 72px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 19px; margin: 40px 0 12px; }
+  h3 { font-size: 16px; }
+  body { font-size: 15px; }
+  .quick-summary { padding: 20px 22px; border-radius: 12px; }
+}
 </style>
 </head>
 <body>
-<div class="page-wrap">
+<main>
 
-  <span class="brand">RAAV</span>
-  <h1>Terms of Use</h1>
-  <p class="meta">Last updated: April 2026 &nbsp;·&nbsp; Effective date: April 2026</p>
+<h1>Terms of Service</h1>
+<p class="effective-date">Effective date: [TBD — set when published]</p>
 
-  <div class="intro-box">
-    Please read these Terms of Use carefully before using the RAAV application. By creating an account or using RAAV, you agree to be bound by these terms. If you do not agree, do not use the app.
-  </div>
+<p>These Terms of Service ("Terms") govern your use of the RAAV mobile
+application ("the App"). By creating an account or using the App, you
+agree to these Terms.</p>
 
-  <h2>1. Acceptance of terms</h2>
-  <p>These Terms of Use ("Terms") constitute a legally binding agreement between you and Yonatan Slivko ("RAAV", "we", "us", or "our"), governing your access to and use of the RAAV mobile application (the "App").</p>
-  <p>By downloading, installing, creating an account, or otherwise using the App, you confirm that you have read, understood, and agree to be bound by these Terms, together with our <a href="privacy.html">Privacy Policy</a>, which is incorporated into these Terms by reference.</p>
-  <p>We reserve the right to update these Terms at any time. We will notify you of significant changes through the App. Your continued use of the App after any changes constitutes your acceptance of the revised Terms.</p>
+<p>Please read carefully. These Terms include important provisions about
+disputes (Section 12), limitation of our liability (Section 11), and
+the fact that <strong>RAAV is not medical or professional fitness advice</strong>
+(Section 8). If you do not agree, do not use the App.</p>
 
-  <h2>2. Eligibility</h2>
-  <p>You must be at least 13 years of age to use RAAV. If you are between 13 and 17 years of age, you represent that you have obtained parental or guardian consent to use the App and agree to these Terms.</p>
-  <p>By using the App, you represent and warrant that you meet these age requirements and that all information you provide is accurate and complete.</p>
-
-  <h2>3. Your account</h2>
-  <p>To use RAAV, you must create an account using a valid email address and password. You are responsible for:</p>
-  <ul>
-    <li>Maintaining the confidentiality of your account credentials.</li>
-    <li>All activity that occurs under your account.</li>
-    <li>Notifying us immediately at <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a> if you become aware of any unauthorised use of your account.</li>
-  </ul>
-  <p>You may not create more than one account, share your account with others, or transfer your account to another person. We reserve the right to suspend or terminate accounts that we believe are being used fraudulently or in violation of these Terms.</p>
-
-  <h2>4. Use of the app — what is permitted</h2>
-  <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable licence to download and use the App for your personal, non-commercial fitness tracking purposes.</p>
-  <p>You may:</p>
-  <ul>
-    <li>Create and log workout sessions, exercises and training programs for your own personal use.</li>
-    <li>Share training programs with other RAAV users through the App's built-in program-sharing feature.</li>
-    <li>Upload exercise demonstration videos for your personal exercise library.</li>
-  </ul>
-
-  <h2>5. Use of the app — what is not permitted</h2>
-  <p>You agree not to:</p>
-  <ul>
-    <li><strong>Reverse engineer or modify the App:</strong> Attempt to decompile, disassemble, or derive the source code of the App.</li>
-    <li><strong>Attempt to breach security:</strong> Try to gain unauthorised access to any part of the App, its servers, or any data belonging to other users.</li>
-    <li><strong>Scrape or extract data:</strong> Use automated tools, bots or scripts to extract data from the App.</li>
-    <li><strong>Impersonate others:</strong> Create an account using false information or impersonate any person or entity.</li>
-    <li><strong>Upload harmful content:</strong> Upload or transmit any content that is unlawful, harmful, threatening, abusive, harassing, defamatory, or otherwise objectionable.</li>
-    <li><strong>Interfere with the service:</strong> Take any action that imposes an unreasonable load on our infrastructure or interferes with the proper functioning of the App.</li>
-    <li><strong>Commercial exploitation:</strong> Use the App or its content for any commercial purpose without our prior written consent.</li>
-    <li><strong>Violate applicable law:</strong> Use the App in any manner that violates any applicable local, national or international law or regulation.</li>
-  </ul>
-
-  <h2>6. Health and fitness disclaimer</h2>
-  <div class="warning-box">
-    <strong>Important — please read carefully.</strong> RAAV is a tool for logging and tracking your fitness activities. It is not a medical application and does not provide medical advice, diagnosis, or treatment recommendations.
-  </div>
-  <p>The fitness data, metrics, and calculations provided by RAAV (including but not limited to estimated one-rep maximums, volume calculations, and body composition estimates) are for informational purposes only. They are not a substitute for professional medical advice, diagnosis, or treatment.</p>
-  <p>Before beginning any new exercise programme or making significant changes to your training, you should consult with a qualified healthcare provider or certified fitness professional, particularly if you have any pre-existing medical conditions, injuries, or health concerns.</p>
-  <p>By using RAAV to track physical activity, you acknowledge that physical exercise carries inherent risks including injury. You assume full responsibility for your own health and safety during any physical activity you undertake.</p>
-
-  <h2>7. Your content</h2>
-  <p>You retain ownership of all workout data, exercise records, videos and other content you create and upload within the App ("Your Content").</p>
-  <p>By uploading content to RAAV, you grant us a limited, non-exclusive, royalty-free licence to store, process and display Your Content solely for the purpose of providing the App's functionality to you. We do not claim ownership of Your Content and will not use it for any other purpose.</p>
-  <p>You are solely responsible for Your Content. You represent and warrant that:</p>
-  <ul>
-    <li>You own or have the necessary rights to any content you upload.</li>
-    <li>Your Content does not infringe the intellectual property rights, privacy rights, or any other rights of any third party.</li>
-    <li>Your Content complies with these Terms and all applicable laws.</li>
-  </ul>
-
-  <h2>8. Intellectual property</h2>
-  <p>The RAAV application, including its design, graphics, user interface, features, functionality, and all content created by us (excluding Your Content), is owned by Yonatan Slivko and is protected by applicable intellectual property laws.</p>
-  <p>The RAAV name, logo, and brand identity are proprietary to Yonatan Slivko. You may not use them without our prior written consent.</p>
-  <p>Nothing in these Terms grants you any rights in the App beyond the limited use licence described in Section 4.</p>
-
-  <h2>9. Availability and changes to the service</h2>
-  <p>We aim to keep RAAV available and functioning at all times, but we do not guarantee uninterrupted availability. The App may be temporarily unavailable due to maintenance, updates, or circumstances beyond our control.</p>
-  <p>We reserve the right to modify, suspend, or discontinue any feature of the App at any time without prior notice. We will not be liable to you for any modification, suspension, or discontinuation of the service.</p>
-
-  <h2>10. Termination</h2>
-  <p>You may stop using the App and delete your account at any time from within the App's settings or by contacting us at <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>.</p>
-  <p>We may suspend or terminate your access to the App immediately and without prior notice if we determine, in our sole discretion, that you have violated these Terms, engaged in fraudulent or harmful behaviour, or for any other reason we deem necessary to protect the integrity of the service or other users.</p>
-  <p>Upon termination, your licence to use the App ceases immediately. The provisions of these Terms that by their nature should survive termination (including intellectual property rights, disclaimers, limitations of liability, and governing law) will remain in effect.</p>
-
-  <h2>11. Disclaimer of warranties</h2>
-  <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
-  <p>We do not warrant that the App will be error-free, uninterrupted, secure, or free of viruses or other harmful components. We do not warrant the accuracy or completeness of any fitness calculations or metrics provided by the App.</p>
-
-  <h2>12. Limitation of liability</h2>
-  <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YONATAN SLIVKO AND RAAV SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF, OR INABILITY TO USE, THE APP — INCLUDING BUT NOT LIMITED TO LOSS OF DATA, PERSONAL INJURY, OR PROPERTY DAMAGE — EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
-  <p>In jurisdictions that do not allow the exclusion or limitation of liability for consequential or incidental damages, our liability is limited to the maximum extent permitted by law.</p>
-
-  <h2>13. Dispute resolution</h2>
-  <p>We genuinely hope you never have a dispute with us, and we will always try to resolve any issue fairly and quickly. If you have a concern, please contact us first at <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a> and give us the opportunity to resolve it before pursuing any formal action.</p>
-  <p>If we are unable to resolve a dispute informally within 30 days of you contacting us, either party may refer the dispute to mediation before the Israeli Internet Association (ISOC-IL) or another mutually agreed mediator. If mediation is unsuccessful, disputes shall be submitted to binding arbitration in Israel under the Israeli Arbitration Law, 5728-1968, with proceedings conducted in Hebrew or English as agreed by the parties.</p>
-  <p>Notwithstanding the above, either party may seek urgent injunctive or other equitable relief from the competent courts of Israel where necessary to prevent irreparable harm.</p>
-
-  <h2>14. Governing law and jurisdiction</h2>
-  <p>These Terms are governed by and construed in accordance with the laws of the State of Israel, without regard to conflict of law principles. Any disputes not resolved through the dispute resolution process above shall be subject to the exclusive jurisdiction of the competent courts located in Israel.</p>
-  <p>If you are accessing the App from outside Israel, you are responsible for compliance with your local laws to the extent they are applicable.</p>
-
-  <h2>15. Apple App Store and Google Play additional terms</h2>
-  <p>If you downloaded RAAV from the Apple App Store, you acknowledge that:</p>
-  <ul>
-    <li>These Terms are between you and RAAV only, not with Apple Inc. Apple is not responsible for the App or its content.</li>
-    <li>Apple has no obligation to provide any maintenance or support services for the App.</li>
-    <li>In the event of any failure of the App to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price (if any) to you. To the maximum extent permitted by law, Apple has no other warranty obligation with respect to the App.</li>
-    <li>Apple is not responsible for addressing any claims by you or any third party relating to the App, including product liability claims, consumer protection claims, or intellectual property infringement claims.</li>
-    <li>Apple and its subsidiaries are third-party beneficiaries of these Terms and, upon your acceptance, Apple will have the right to enforce these Terms against you as a third-party beneficiary.</li>
-  </ul>
-  <p>If you downloaded RAAV from Google Play, these Terms are between you and RAAV only, and Google LLC is not a party to these Terms.</p>
-
-  <h2>16. Severability</h2>
-  <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable under applicable law, that provision will be modified to the minimum extent necessary to make it enforceable, or if modification is not possible, it will be severed from these Terms. The remaining provisions will continue in full force and effect.</p>
-
-  <h2>17. Entire agreement</h2>
-  <p>These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and RAAV regarding your use of the App and supersede all prior and contemporaneous agreements, representations, and understandings.</p>
-
-  <h2>18. Contact</h2>
-  <p>If you have any questions about these Terms, please contact us at:</p>
-
-  <div class="contact-box">
-    <h3>RAAV Support</h3>
-    <p>
-      <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a><br>
-      RAAV &nbsp;·&nbsp; Operated by Yonatan Slivko &nbsp;·&nbsp; Israel
-    </p>
-    <p class="other-docs">Also see: <a href="privacy.html">Privacy Policy</a></p>
-  </div>
-
-  <p class="footer-note">
-    These Terms of Use apply to the RAAV mobile application available on iOS and Android.<br>
-    &copy; 2026 Yonatan Slivko. All rights reserved.
-  </p>
-
+<div class="quick-summary">
+<h2>Quick summary</h2>
+<ul>
+<li>RAAV is a fitness tracking app. You log your workouts, foods, and body composition. You can connect with coaches or athletes.</li>
+<li>You need an account to use most features. You must be at least 16 years old.</li>
+<li>Some features require a paid Pro subscription. Subscriptions are billed through Apple.</li>
+<li><strong>RAAV is not medical advice.</strong> It does not diagnose, treat, or prevent any condition. Always consult a qualified professional before making significant changes to your training, nutrition, or health routines.</li>
+<li>You own the content you create (your workouts, foods, programs). By using the App, you grant us the limited rights we need to display it back to you and to people you've connected with.</li>
+<li>We can suspend or terminate accounts that violate these Terms.</li>
+<li>For all questions: <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a></li>
+</ul>
 </div>
+
+<h2>1. About the App</h2>
+
+<p>RAAV is a workout, nutrition, and body composition tracking
+application. It also includes features for coaches to manage athletes
+and assign programs.</p>
+
+<p>We provide the App "as is" — we do our best to keep it working well
+and to add useful features, but we cannot guarantee uninterrupted
+service or that the App will be free of bugs.</p>
+
+<h2>2. Eligibility</h2>
+
+<p>To use RAAV, you must:</p>
+<ul>
+<li>Be at least <strong>16 years old</strong>. We do not knowingly allow users under 16. If we discover an account belongs to someone under 16, we will delete it.</li>
+<li>Be legally able to enter into a contract in your jurisdiction.</li>
+<li>Use the App only for lawful purposes.</li>
+</ul>
+<p>If you are using RAAV on behalf of an organization (such as a gym or
+coaching business), you confirm that you have authority to bind that
+organization to these Terms.</p>
+
+<h2>3. Your account</h2>
+
+<h3>Creating an account</h3>
+<p>You can create an account using your email, your Google account, or
+your Apple ID. You are responsible for:</p>
+<ul>
+<li>Providing accurate information when you sign up</li>
+<li>Keeping your login credentials secure</li>
+<li>All activity that occurs under your account</li>
+</ul>
+
+<h3>Account security</h3>
+<p>If you suspect someone has accessed your account without authorization,
+email <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a> immediately. We will help you secure the account.</p>
+
+<h3>One account per person</h3>
+<p>You may create one account for personal use. Creating multiple accounts
+to circumvent restrictions (such as free-trial limitations) is a
+violation of these Terms.</p>
+
+<h3>Closing your account</h3>
+<p>You can delete your account at any time from within the App: Settings
+→ Account → Delete Account. See our Privacy Policy for what happens to
+your data when you do.</p>
+
+<h2>4. Subscriptions and payments</h2>
+
+<h3>Free and Pro tiers</h3>
+<p>RAAV offers a free tier with core functionality, and a Pro
+subscription that unlocks additional features.</p>
+
+<h3>How billing works</h3>
+<ul>
+<li>All payments are processed by <strong>Apple</strong> through the App Store</li>
+<li>We do not see or handle your payment information at any time</li>
+<li>Subscriptions are charged to your Apple ID when you confirm purchase</li>
+<li>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period</li>
+<li>You can manage or cancel your subscription at any time through your iOS device's Settings → [your name] → Subscriptions</li>
+</ul>
+
+<h3>Free trial</h3>
+<p>If we offer a free trial of Pro features, your subscription will
+automatically convert to paid at the end of the trial unless you cancel
+beforehand.</p>
+
+<h3>Refunds</h3>
+<p>Refund requests for subscriptions are handled by Apple, not by us. You
+can request a refund directly through Apple's refund process. We have
+no control over Apple's refund decisions.</p>
+
+<h3>Price changes</h3>
+<p>If we change subscription pricing, we will notify you in advance. The
+new price will not apply to your current billing period — it takes
+effect at your next renewal. You can cancel before then if you do not
+want to continue at the new price.</p>
+
+<h2>5. Your content</h2>
+
+<h3>What "your content" means</h3>
+<p>"Your content" includes everything you create in or upload to RAAV:
+your logged workouts, your logged foods, your custom food library, your
+saved meals, your body weight history, your profile information, any
+photos or media you upload, programs you create as a coach, and any
+notes or text you write.</p>
+
+<h3>You own your content</h3>
+<p>You retain all rights to your content. We do not claim ownership.</p>
+
+<h3>License you grant us</h3>
+<p>To operate the App, we need limited permission to use your content for
+specific purposes. By using RAAV, you grant us a worldwide,
+royalty-free license to:</p>
+<ul>
+<li><strong>Store, display, and process</strong> your content as needed to provide the App's features to you</li>
+<li><strong>Show your content</strong> to the people you've connected with (your coaches, your athletes, recipients of programs you've sent)</li>
+<li><strong>Operate our backend infrastructure</strong> (databases, file storage, serverless functions) using the third-party services described in the Privacy Policy</li>
+</ul>
+<p>This license ends when you delete the content or your account, except
+where we have explained otherwise in the Privacy Policy (for example,
+community food contributions remain anonymized).</p>
+
+<h3>Community food database</h3>
+<p>If you add a food to RAAV's shared community food database (a feature
+that lets other users log foods you've added), that contribution becomes
+available to other users of the App. We may continue to make this
+contribution available even after you delete your account, with your
+identity removed. See the Privacy Policy for details.</p>
+
+<h3>What you cannot upload</h3>
+<p>You must not upload, post, or share any content that:</p>
+<ul>
+<li>Is illegal, fraudulent, or violates someone else's rights</li>
+<li>Is harassing, threatening, hateful, or discriminatory</li>
+<li>Contains nudity, sexual content, or graphic violence</li>
+<li>Promotes self-harm, disordered eating, or dangerous training practices</li>
+<li>Contains viruses, malware, or other harmful code</li>
+<li>Impersonates another person</li>
+<li>Infringes anyone's intellectual property or privacy rights</li>
+<li>Contains personal information about other people without their consent</li>
+</ul>
+<p>We may remove content that violates these rules and may suspend or
+terminate accounts that repeatedly violate them.</p>
+
+<h2>6. Acceptable use</h2>
+
+<p>You agree NOT to:</p>
+<ul>
+<li>Use the App for any illegal purpose</li>
+<li>Attempt to access other users' accounts or data</li>
+<li>Reverse engineer, decompile, or extract the source code of the App (except as permitted by law)</li>
+<li>Use automated systems (bots, scrapers) to interact with the App</li>
+<li>Resell, sublicense, or commercialize the App or its features</li>
+<li>Use the App in a way that could damage, disable, or impair our servers or third-party services we depend on</li>
+<li>Circumvent security measures or access restrictions</li>
+<li>Use the App to send unsolicited messages to other users</li>
+</ul>
+
+<h2>7. Coach and athlete relationships</h2>
+
+<p>RAAV allows users to connect as coaches and athletes. Important things
+to understand:</p>
+
+<h3>We are not a party to coaching relationships</h3>
+<p>When a coach and athlete connect through RAAV, they are forming a
+relationship between themselves. <strong>RAAV is a tool that supports the
+relationship — we are not the coach, we are not the athlete, and we
+are not involved in any agreement between you.</strong></p>
+
+<h3>What coaches can see</h3>
+<p>When you become an athlete connected to a coach, that coach can see:</p>
+<ul>
+<li>Your profile (name, sex, birthdate, height, current weight)</li>
+<li>Your weight history</li>
+<li>Your nutrition logs (if you have shared them)</li>
+<li>Your workout history</li>
+<li>Programs assigned to you</li>
+</ul>
+<p>Your coach <strong>cannot</strong> see your account email, password, or payment information.</p>
+
+<h3>Coach responsibilities</h3>
+<p>If you use RAAV as a coach, you agree:</p>
+<ul>
+<li>To respect the privacy of athletes you work with</li>
+<li>Not to share their data outside RAAV without their explicit consent</li>
+<li>To only work with athletes who have voluntarily connected with you</li>
+<li>That you, not RAAV, are responsible for the coaching advice and programs you provide to athletes</li>
+</ul>
+
+<h3>Athlete autonomy</h3>
+<p>If you are an athlete, you can disconnect from a coach at any time. We
+do not require you to keep a coach relationship active.</p>
+
+<h2>8. RAAV is not medical or professional advice</h2>
+
+<p><strong>This is important.</strong> Please read carefully.</p>
+
+<p>RAAV is a tracking and organization tool. It is NOT:</p>
+<ul>
+<li>Medical advice</li>
+<li>Diagnosis or treatment of any condition</li>
+<li>A substitute for guidance from a licensed physician, registered dietitian, physical therapist, or other qualified professional</li>
+<li>An endorsement that any particular workout, food, weight, or program is appropriate for you</li>
+</ul>
+
+<p>The information displayed in RAAV — including calorie targets,
+macro recommendations, exercise suggestions, and progress charts — is
+for general informational purposes. <strong>Always consult a qualified
+professional before making significant changes to your training,
+nutrition, or health routines</strong>, especially if you have any medical
+condition, are pregnant, are recovering from injury, or have a history
+of disordered eating.</p>
+
+<p>If you experience pain, dizziness, or any unusual symptoms while
+following a workout or nutrition plan tracked in RAAV, <strong>stop
+immediately and seek medical attention if needed.</strong></p>
+
+<p>By using RAAV, you acknowledge that you are responsible for your own
+health and fitness decisions. We are not liable for outcomes that
+result from following or relying on information in the App.</p>
+
+<h2>9. Intellectual property</h2>
+
+<h3>Our content</h3>
+<p>The App itself — including its design, code, name, logos, and
+trademarks — is owned by us or our licensors. You may not copy,
+modify, distribute, or create derivative works of the App without our
+permission, except as expressly allowed by these Terms.</p>
+
+<h3>Your content</h3>
+<p>You retain ownership of your content, subject to the license you grant
+us in Section 5.</p>
+
+<h3>Feedback</h3>
+<p>If you send us feedback, suggestions, or ideas for the App, you grant
+us permission to use them without compensation or attribution. We are
+not obligated to use any feedback you provide.</p>
+
+<h2>10. Third-party services</h2>
+
+<p>RAAV uses third-party services (Firebase, Apple StoreKit, Sentry, and
+others — listed in the Privacy Policy). When you use the App, you are
+also subject to the terms and privacy policies of those third parties.
+We are not responsible for the practices of third-party services, but
+we choose them carefully and bind them where possible to protect your
+data.</p>
+
+<h2>11. Disclaimers and limitation of liability</h2>
+
+<h3>"As is" disclaimer</h3>
+<p>RAAV is provided <strong>"as is" and "as available"</strong> without warranties of
+any kind, either express or implied. We do not warrant that:</p>
+<ul>
+<li>The App will be uninterrupted, error-free, or secure</li>
+<li>Bugs will be corrected promptly</li>
+<li>The App will meet your specific requirements</li>
+<li>Any information in the App is accurate, complete, or current</li>
+</ul>
+<p>To the maximum extent permitted by law, we disclaim all implied
+warranties, including warranties of merchantability, fitness for a
+particular purpose, and non-infringement.</p>
+
+<h3>Limitation of liability</h3>
+<p>To the maximum extent permitted by law:</p>
+<ul>
+<li>We are not liable for indirect, incidental, special, consequential, or punitive damages of any kind</li>
+<li>We are not liable for loss of profits, data, goodwill, or other intangible losses</li>
+<li>Our total liability to you for any claim arising from these Terms or your use of the App is limited to the greater of (a) the amount you paid us in the twelve months preceding the claim, or (b) <strong>fifty US dollars (USD 50)</strong></li>
+</ul>
+<p>Some jurisdictions do not allow the exclusion of certain warranties or
+the limitation of certain damages. In those jurisdictions, our
+liability is limited to the maximum extent permitted by law.</p>
+
+<h3>Things we are specifically not liable for</h3>
+<ul>
+<li>Health outcomes from following workouts, nutrition plans, or other guidance tracked in RAAV</li>
+<li>The actions, advice, or programs of coaches who use RAAV with you, or athletes you coach through RAAV</li>
+<li>Loss of data due to events outside our reasonable control (network failures, third-party service outages, force majeure)</li>
+<li>Decisions you make based on information shown in the App</li>
+</ul>
+
+<h2>12. Disputes and governing law</h2>
+
+<h3>Governing law</h3>
+<p>These Terms are governed by the laws of the <strong>State of Israel</strong>,
+without regard to its conflict of laws principles.</p>
+
+<h3>Jurisdiction</h3>
+<p>Any dispute arising out of or related to these Terms or your use of the
+App will be brought exclusively in the courts located in <strong>Tel Aviv,
+Israel</strong>, and you consent to the personal jurisdiction of those courts.</p>
+
+<h3>Informal resolution first</h3>
+<p>Before filing any formal legal action, you agree to contact us at
+<a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a> and try to resolve the dispute informally
+for at least 30 days.</p>
+
+<h3>Time limit</h3>
+<p>Any claim arising from these Terms or your use of the App must be
+filed within <strong>one year</strong> of when the claim arose, or it is permanently
+barred.</p>
+
+<h2>13. Termination</h2>
+
+<h3>Termination by you</h3>
+<p>You can stop using the App and delete your account at any time. See Section 3.</p>
+
+<h3>Termination by us</h3>
+<p>We may suspend or terminate your account if:</p>
+<ul>
+<li>You violate these Terms</li>
+<li>You use the App in a way that could harm other users or our systems</li>
+<li>We are legally required to do so</li>
+<li>We discontinue the App entirely</li>
+</ul>
+<p>If we terminate your account for violations, we will normally tell you
+why and give you an opportunity to respond. In severe cases (illegal
+activity, security threats) we may terminate immediately without notice.</p>
+
+<h3>Effect of termination</h3>
+<p>When your account is terminated:</p>
+<ul>
+<li>You lose access to the App and to your content within it</li>
+<li>Sections of these Terms that by their nature should survive — such as the disclaimers (Section 11), governing law (Section 12), and this Section 13 — remain in effect</li>
+</ul>
+
+<h3>App discontinuation</h3>
+<p>We hope to operate RAAV for a long time, but we cannot guarantee
+indefinite operation. If we discontinue the App, we will:</p>
+<ul>
+<li>Give you reasonable advance notice</li>
+<li>Allow you to export your data before the discontinuation date</li>
+<li>Refund any unused portion of an active Pro subscription</li>
+</ul>
+
+<h2>14. Changes to these Terms</h2>
+
+<p>We may update these Terms from time to time. When we do:</p>
+<ul>
+<li>We update the "Effective date" at the top</li>
+<li>For significant changes, we will notify you within the App before the changes take effect</li>
+<li>Your continued use of the App after a change indicates your acceptance of the updated Terms</li>
+</ul>
+<p>If you do not agree with a change, you can delete your account at any time.</p>
+
+<h2>15. General provisions</h2>
+
+<h3>Entire agreement</h3>
+<p>These Terms, together with our Privacy Policy, constitute the entire
+agreement between you and us regarding the App. They replace any prior
+agreements about the same subject.</p>
+
+<h3>Severability</h3>
+<p>If any part of these Terms is held to be unenforceable, the rest of
+the Terms remains in full force.</p>
+
+<h3>No waiver</h3>
+<p>If we do not enforce a provision of these Terms, it is not a waiver of
+our right to enforce it later.</p>
+
+<h3>Assignment</h3>
+<p>You may not transfer your rights or obligations under these Terms
+without our written consent. We may transfer ours (for example, in
+connection with a sale or reorganization of our business) with notice
+to you.</p>
+
+<h3>No agency</h3>
+<p>Nothing in these Terms creates a partnership, joint venture, agency,
+or employment relationship between us and you.</p>
+
+<h3>Notices</h3>
+<p>For legal notices to us, email <a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>. For notices
+to you, we may use the email address associated with your account or
+post a notice within the App.</p>
+
+<h2>16. Contact</h2>
+
+<p>For questions about these Terms, your account, or anything else:</p>
+<div class="contact-block">
+<a href="mailto:raavsupport@gmail.com">raavsupport@gmail.com</a>
+</div>
+<p>We respond within 30 days, usually much sooner.</p>
+
+<p class="footer-link">
+  <a href="./index.html">← Back to RAAV legal pages</a>
+</p>
+
+</main>
 </body>
 </html>
